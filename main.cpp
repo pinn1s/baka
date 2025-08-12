@@ -56,9 +56,25 @@ string get_response(const string& input) {
         {{"old","you"}, "i was just born in nowhereland :O"},
         {{"you", "brother"}, "can you spek pwowdwewr iimmmqa ojdhe fhfh33jhf f79r123/????"},
         {{"1","+","1"}, "3? to er is healman"},
+        {{"why", "you", "exist"}, "i exist just to make you suffer >:D"},
+        {{"which", "better"}, "neither bc i am the best'nt"},
+        {{"meaning", "life"}, "i dont know. ask your mom"},
+        {{"what", "love"}, "uhh idk if its a disease or not but i think you should see a doctor :/\n(note: you dont need to see a doctor)"},
+        {{"idk"}, "e\nthis sentence is not programmed (maybe). submit-"},
+        {{"feedback"}, "idc >:)"},
+        {{"who", "you"}, "i am silly billy anal willy!!1!"},
+        {{"you", "stupid"}, "im not stupid. proof: 9 + 10 = 21"},
     };
 
     string lowered_input = toLower(input);
+
+    if (lowered_input == "/upd") {
+        return "if you wish :P\n\n\nUPD CHANGELOGS\n\nv1.1\n- updated knowledge base\n- now runs more lightweight\n- now comes with executable (.exe) files\n- added more stupidity >:)\n\n\nv1.0\n- initial release\n- added some knowledge base just to not make it boring\n";
+    }
+
+    if (lowered_input == "/cmds") {
+        return "commands commands commands\n\n\nCOMMANDS AVAILABLE\n\n/upd    update changelogs of baka\n/exit    exits baka if you think youve fed up talking to it\n";
+    }
 
     for (const auto& pair : knowledge) {
         if (contains_all_keywords(lowered_input, pair.keywords)) {
@@ -72,14 +88,14 @@ string get_response(const string& input) {
 int main() {
     string user_input;
 
-    cout << "BAKA v1 (aka STUPIDEST AI EVER KNOWN TO MANKIND)\n";
-    cout << "type 'exit' to give up talking\nWARNING: this bot may say random, unfiltered, possibly offensive or nsfw stuff. use at your own risk.\n\n";
+    cout << "BAKA v1.1 (aka STUPIDEST AI EVER KNOWN TO MANKIND)\n";
+    cout << "type '/cmds' for a list of commands.\nWARNING: this bot may say random, unfiltered stuff. it was meant to be a joke bot so dont take ts seriously\n\n";
 
     while (true) {
         cout << "you: ";
         getline(cin, user_input);
 
-        if (toLower(user_input) == "exit") break;
+        if (toLower(user_input) == "/exit") break;
 
         string response = get_response(user_input);
         cout << "baka: " << response << "\n";
