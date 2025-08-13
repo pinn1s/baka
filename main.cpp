@@ -64,16 +64,44 @@ string get_response(const string& input) {
         {{"feedback"}, "idc >:)"},
         {{"who", "you"}, "i am silly billy anal willy!!1!"},
         {{"you", "stupid"}, "im not stupid. proof: 9 + 10 = 21"},
+        {{"you", "dumb"}, "im not dumb. proof: idk"},
+        {{"do", "love"}, "no i hate everything except flint and steel"},
+        {{"do", "hate"}, "yes i hate everything except doordash delievery :P"},
+        {{"you", "like"}, "i like"},
+        {{"fat"}, "ill shove 10 grand pianos down ur throat B-)"},
+        {{"king of pop"}, "lebron james"},
+        {{"die"}, "ill you run over by my school bus >:)"},
+        {{"kill"}, "uh huh?"},
+        {{"you", "think"}, "longitute: 10.7598631\nlatitude: 106.6880843"},
+        {{"you", "smart"}, "yes i am. proof: 1 + 1 = 67"},
+        {{"what the fuck"}, "youre not gonna believe this"},
+        {{"i", "dont"}, "i do >:D"},
+        {{"oh", "hello"}, "hello there lady fetch me a taxi"},
+        {{"say"}, "ill plant a bomb in your house >:)"},
+        {{"you"}, "you'll be instantly turned into a cupcake if you say the magic word"},
+        {{"buh", "bye"}, "bye buh"},
+        {{"who", "julius caesar"}, "he was part of teh flinktshcktonrefdghdfgksjhdfg"},
+        {{"insult"}, "im sending u to the gulag >:)"},
+        {{"pi"}, "3.6969696969696969696969696969"}
+
     };
 
     string lowered_input = toLower(input);
 
     if (lowered_input == "/upd") {
-        return "if you wish :P\n\n\nUPD CHANGELOGS\n\nv1.1\n- updated knowledge base\n- now runs more lightweight\n- now comes with executable (.exe) files\n- added more stupidity >:)\n\n\nv1.0\n- initial release\n- added some knowledge base just to not make it boring\n";
+        return "if you wish :P\n\n\nUPD CHANGELOGS\n\nv1.1.1\n- updated knowledge base\n- more commands available\n\n\nv1.1\n- updated knowledge base\n- now runs more lightweight\n- now comes with executable (.exe) files\n- added more stupidity >:)\n\n\nv1.0\n- initial release\n- added some knowledge base just to not make it boring\n";
     }
 
     if (lowered_input == "/cmds") {
         return "commands commands commands\n\n\nCOMMANDS AVAILABLE\n\n/upd    update changelogs of baka\n/exit    exits baka if you think youve fed up talking to it\n";
+    }
+
+    if (lowered_input == "/cred") {
+        return "wifhweiugwheouh\n\n\nCREDITS\n\nughxd     programmer\nTharupec      knowledge base\n\n";
+    }
+
+    if (lowered_input == "/pg") {
+        return "ffffffffffff\n\n\nDETAILS ABT THE BOT\n\nthis bot is programmed in c++ 17\nthe programmer used vscode to write this bot\nbtw congrats you found the easter egg :)\n";
     }
 
     for (const auto& pair : knowledge) {
@@ -88,7 +116,7 @@ string get_response(const string& input) {
 int main() {
     string user_input;
 
-    cout << "BAKA v1.1 (aka STUPIDEST AI EVER KNOWN TO MANKIND)\n";
+    cout << "BAKA v1.1.1 (aka STUPIDEST AI EVER KNOWN TO MANKIND)\n";
     cout << "type '/cmds' for a list of commands.\nWARNING: this bot may say random, unfiltered stuff. it was meant to be a joke bot so dont take ts seriously\n\n";
 
     while (true) {
