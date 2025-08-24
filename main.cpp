@@ -248,8 +248,9 @@ string get_response(const string& input) {
         {{"c#"}, "say louder?"},
         {{"lua"}, "mommy dady i found mister pule"},
         {{"luau"}, "meow meow mow lawn mower"},
-        {{"brainfuck"}, "what the fuk r u doin dont put fucking brain on the word fuck"},
-    }
+        {{"brainfuck"}, "what the fuk r u doin dont put fucking brain on the word fuck"}
+    };
+
     string lowered_input = toLower(input);
     if (lowered_input == "/upd") {
         return "if you wish :P\n\n\nUPD CHANGELOGS\n\nv1.2.1\n- updated knowledge base and made it more... responsive\n- easter eggs!!\n- more commands available\n\n\nv1.2\n- updated knowledge base\n- easter eggs!!\n- and more stupidity?\n\n\nv1.1.1\n- updated knowledge base\n- more commands available\n\n\nv1.1\n- updated knowledge base\n- now runs more lightweight\n- now comes with executable (.exe) files\n- added more stupidity >:)\n\n\nv1.0\n- initial release\n- added some knowledge base just to not make it boring\n";
@@ -261,7 +262,7 @@ string get_response(const string& input) {
         return "wifhweiugwheouh\n\n\nCREDITS\n\nughxd     programmer\nTharupec      knowledge base\n\n";
     }
     if (lowered_input == "--iamverysmart") {
-        return "\n\n        _            _        _           _   _        _  \n       / /\         /\ \     /\ \       /\ \ /\ \     /\_\n      / /  \       /  \ \    \ \ \     /  \ \\ \ \   / / /\n     / / /\ \__   / /\ \ \   /\ \_\   / /\ \ \\ \ \_/ / / \n    / / /\ \___\ / / /\ \_\ / /\/_/  / / /\ \ \\ \___/ /  \n    \ \ \ \/___// / /_/ / // / /    / / /  \ \_\\ \ \_/   \n     \ \ \     / / /__\/ // / /    / / /    \/_/ \ \ \    \n _    \ \ \   / / /_____// / /    / / /           \ \ \   \n/_/\__/ / /  / / /   ___/ / /__  / / /________     \ \ \  \n\ \/___/ /  / / /   /\__\/_/___\/ / /_________\     \ \_\ \n \_____\/   \/_/    \/_________/\/____________/      \/_/  \n";
+        return "\n\nyou arent\n\n\n8324752x893ws4g752093487qwe50239487qwe502d98347052893fa475029348758g9a234750dg9a28475029384g7a5er0293487520347ad52039487w52039q4s857204987513285689273456298347652345928743695246395872634785924635 is my api'nt";
     }
     if (lowered_input == "/pg") {
         return "ffffffffffff\n\n\nDETAILS ABT THE BOT\n\nthis bot is programmed in c++ 17\nthe programmer used vscode to write this bot\nbtw congrats you found the easter egg :)\n";
