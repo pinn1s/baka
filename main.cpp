@@ -244,11 +244,11 @@ string get_response(const string& input) {
         {{"c"}, "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"},
         {{"touch", "grass"}, "never ever!!!!!!11!!!!"},
         {{"fire", "in", "hole"}, "i'll brun you to death"},
-        {{"charp"}, ""},
-        {{"c#"}, ""},
-        {{"lua"}, ""},
-        {{"luau"}, ""},
-        {{"brainfuck"}, ""},
+        {{"csharp"}, "so sharp ill cut you to def"}, // pinn1s forgot to add an s
+        {{"c#"}, "say louder?"},
+        {{"lua"}, "mommy dady i found mister pule"},
+        {{"luau"}, "meow meow mow lawn mower"},
+        {{"brainfuck"}, "what the fuk r u doin dont put fucking brain on the word fuck"},
     }
     string lowered_input = toLower(input);
     if (lowered_input == "/upd") {
